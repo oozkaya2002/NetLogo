@@ -1,0 +1,53 @@
+/* Center the jumbotron contents vertically */
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Style the jumbotron text */
+.jumbotron h2 {
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    padding-top: 1.25rem;
+    font-size: 1.2rem;
+}
+
+/* Center the GIF image */
+.jumbotron img {
+    border-radius: 10%;
+    width: 75%;
+}
+
+/* Style for both pages */
+.page {
+  display: none;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  text-align: center;
+  margin-top: 50%;
+}
+
+.active {
+  display: block;
+  transform: translateX(0);
+}
+
+/* Style the mobile back button */
+.mobile-back-button {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 1000;
+}
+
+.mobile-back-button svg {
+    margin-right: 6px;
+}
